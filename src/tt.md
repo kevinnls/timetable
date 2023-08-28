@@ -2,6 +2,7 @@
 
 <script type="module" src="tt.js"></script>
 <style>
+ :root { color-scheme: dark light ; }
 table { margin: auto; width: max-content; }
 .mc { background-color: hsl(0,100%,50%);}
 .cb { background-color: hsl(36,100%,50%);}
