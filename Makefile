@@ -1,6 +1,6 @@
 I = src/tt.md
 J = src/tt.js
-OUT_DIR = out
+OUT_DIR = docs
 
 $(OUT_DIR):
 	@mkdir -p $(OUT_DIR)
