@@ -4,6 +4,7 @@ OUT_DIR = docs
 
 $(OUT_DIR):
 	@mkdir -p $(OUT_DIR)
+	@touch $(OUT_DIR)/.nojekyll
 
 output: $(OUT_DIR)
 	pandoc -fmarkdown -thtml --standalone -o $(OUT_DIR)/index.html $(I)
