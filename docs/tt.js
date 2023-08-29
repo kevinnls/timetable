@@ -31,11 +31,11 @@ function updateUnchecked(){
       toggleElements(id, 'none')
       document.querySelectorAll(`input.${id}`).forEach(ele => ele.checked=false)
     }
-  )  
+  )
 }
 
 function toggleElements(id,visibility) {
-  document.querySelectorAll(`span.${id}`).forEach(element => 
+  document.querySelectorAll(`span.${id}`).forEach(element =>
     element.style = `display:  ${visibility};`
-  ) 
+  )
 }
