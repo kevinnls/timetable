@@ -38,47 +38,48 @@ form { display: grid; grid-template-columns: 1fr 9fr; align-content: center; jus
 </header>
 
 <figure>
-<table>
+<table role="grid">
 
 <thead>
 <tr class="header">
-<th>Day</th>
-<th>09:00—11:00</th>
-<th>11:10—13:10</th>
-<th>14:30—16:30</th>
+<th scope="col">Day</th>
+<th scope="col">09:00—11:00</th>
+<th scope="col">11:10—13:10</th>
+<th scope="col">14:30—16:30</th>
 </tr>
 </thead>
 
 <tbody>
 <tr class="odd">
-<td>Mon</td>
+<th scope="row">Mon</th>
 <td><span class="mc">MC</span></td>
 <td><span class="cb">CB</span></td>
 <td><span class="library">Lib</span></td>
 </tr>
 
 <tr class="even">
-<td>Tue</td>
+<th scope="row">Tue</th>
 <td><span class="sk">SK</span></td>
 <td><span class="klp">KLP</span></td>
 <td><span class="uds">UDS</span></td>
 </tr>
 
 <tr class="odd">
-<td>Wed</td>
+<th scope="row">Wed</th>
 <td><span class="sb">SB</span></td>
 <td><span class="mc">MC</span></td>
 <td></td>
 </tr>
+
 <tr class="even">
-<td>Thu</td>
+<th scope="row">Thu</th>
 <td><span class="sb">SB</span></td>
 <td><span class="klp">KLP</span></td>
 <td><span class="uds">UDS</span></td>
 </tr>
 
 <tr class="odd">
-<td>Fri</td>
+<th scope="row">Fri</th>
 <td><span class="sk">SK</span></td>
 <td><span class="cb">CB</span></td>
 <td></td>
@@ -88,7 +89,7 @@ form { display: grid; grid-template-columns: 1fr 9fr; align-content: center; jus
 </table>
 </figure>
 
-<form name="selections">
+<form class="grid" name="selections">
 <input class="mc" name="mc" id="mc" type="checkbox" checked>
 <label class="mc" for="mc">
   MC / Francophone Literatures and National Identities
