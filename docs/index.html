@@ -17,10 +17,14 @@ label { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 1
 figure { width: clamp(60%,600px,95%); margin: auto; }
 form.grid { grid-template-columns: 1fr 9fr; align-items: center; justify-items: center; width: clamp(50%,600px,90%); margin: auto; }
 th, td { text-align: center; }
+td { font-weight: bold; }
 </style>
 
 <style>
-:root { --alpha: 50%; --lightness: 30%; --saturation: 90%; }
+:root { --alpha: 50%; --lightness: 50%; --saturation: 100%; --slate: hsla(0,0%,75%,30%)}
+@media(prefers-color-scheme: dark) {
+:root { --alpha: 50%; --lightness: 60%; --saturation: 70%; --slate: hsla(0,0%,40%,80%)}
+}
 .mc { background-color: hsla(0,var(--saturation),var(--lightness),var(--alpha));}
 .cb { background-color: hsla(36,var(--saturation),var(--lightness),var(--alpha));}
 .sk { background-color: hsla(72,var(--saturation),var(--lightness),var(--alpha));}
@@ -28,6 +32,7 @@ th, td { text-align: center; }
 .uds { background-color: hsla(170,var(--saturation),var(--lightness),var(--alpha));}
 .sb { background-color: hsla(206,var(--saturation),var(--lightness),var(--alpha));}
 .library { background-color: hsla(254,var(--saturation),var(--lightness),var(--alpha));}
+input[type="checkbox"]:not(:checked), input[type="checkbox"]:not(:checked) + label { background-color: var(--slate); text-decoration: line-through; }
 </style>
 
 <script type="module" src="tt.js"></script>
