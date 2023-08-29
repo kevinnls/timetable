@@ -13,7 +13,7 @@
 
 <style>
 :root { --alpha: 50%; --lightness: 30%; --saturation: 90%; }
-table { margin: auto; width: max-content; }
+table { margin: auto; max-width: max-content; overflow: scroll;}
 .mc { background-color: hsla(0,var(--saturation),var(--lightness),var(--alpha));}
 .cb { background-color: hsla(36,var(--saturation),var(--lightness),var(--alpha));}
 .sk { background-color: hsla(72,var(--saturation),var(--lightness),var(--alpha));}
@@ -23,7 +23,7 @@ table { margin: auto; width: max-content; }
 .library { background-color: hsla(254,var(--saturation),var(--lightness),var(--alpha));}
 span { display: block; width: 3em; padding-right: .3em; padding-left: .3em; text-align: center; margin: auto; }
 label { width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
-form { display: grid; grid-template-columns: 1fr 9fr; align-content: center; justify-items: center; width: clamp(90%,600px,50%); margin: auto;}
+form { display: grid; grid-template-columns: 1fr 9fr; align-content: center; justify-items: center; width: clamp(50%,600px,90%); margin: 3em auto;}
 </style>
 <header>
 <h1>MA French Sem 3 Timetable</h1>
@@ -71,6 +71,7 @@ form { display: grid; grid-template-columns: 1fr 9fr; align-content: center; jus
 </tr>
 </tbody>
 </table>
+
 <form name="selections">
 <input class="mc" name="mc" id="mc" type="checkbox" checked>
 <label class="mc" for="mc">
