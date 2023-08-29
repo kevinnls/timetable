@@ -14,7 +14,7 @@ document.querySelectorAll('input[type="checkbox"]').forEach(
 
 function changeHandler(e) {
   const id = e.target.id;
-  const visibility = e.target.checked ? 'block' : 'none';
+  const visibility = e.target.checked ? 'visible' : 'hidden';
   toggleElements(id, visibility)
   updateLocalStorage(id);
 }
@@ -28,14 +28,14 @@ async function updateLocalStorage(id) {
 function updateUnchecked(){
   unchecked.forEach(
     (id) => {
-      toggleElements(id, 'none')
+      toggleElements(id, 'hidden')
       document.querySelectorAll(`input.${id}`).forEach(ele => ele.checked=false)
     }
   )
 }
 
 function toggleElements(id,visibility) {
-  document.querySelectorAll(`span.${id}`).forEach(element =>
-    element.style = `display:  ${visibility};`
+  document.querySelectorAll(`td.${id}`).forEach(element =>
+    element.style = `visibility:  ${visibility};`
   )
 }

@@ -14,7 +14,8 @@
 :root { --grid-spacing-horizontal: .7ch; --grid-spacing-vertical: .7ch; }
 input[type="checkbox"]:checked { border-color: transparent; }
 label { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 100%; border-radius: 4px; padding: .5ch; }
-form.grid { grid-template-columns: 1fr 9fr; align-items: center; justify-items: center; width: clamp(50%,600px,90%); margin: auto; }*/
+form.grid { grid-template-columns: 1fr 9fr; align-items: center; justify-items: center; width: clamp(50%,600px,90%); margin: auto; }
+td { text-align: center; }
 </style>
 
 <style>
@@ -42,7 +43,7 @@ form.grid { grid-template-columns: 1fr 9fr; align-items: center; justify-items: 
 </header>
 
 <figure>
-<table role="grid">
+<table>
 
 <thead>
 <tr class="header">
@@ -56,36 +57,36 @@ form.grid { grid-template-columns: 1fr 9fr; align-items: center; justify-items: 
 <tbody>
 <tr class="odd">
 <th scope="row">Mon</th>
-<td><span class="mc">MC</span></td>
-<td><span class="cb">CB</span></td>
-<td><span class="library">Lib</span></td>
+<td class="mc">MC</span></td>
+<td class="cb">CB</span></td>
+<td class="library">Lib</span></td>
 </tr>
 
 <tr class="even">
 <th scope="row">Tue</th>
-<td><span class="sk">SK</span></td>
-<td><span class="klp">KLP</span></td>
-<td><span class="uds">UDS</span></td>
+<td class="sk">SK</span></td>
+<td class="klp">KLP</span></td>
+<td class="uds">UDS</span></td>
 </tr>
 
 <tr class="odd">
 <th scope="row">Wed</th>
-<td><span class="sb">SB</span></td>
-<td><span class="mc">MC</span></td>
+<td class="sb">SB</span></td>
+<td class="mc">MC</span></td>
 <td></td>
 </tr>
 
 <tr class="even">
 <th scope="row">Thu</th>
-<td><span class="sb">SB</span></td>
-<td><span class="klp">KLP</span></td>
-<td><span class="uds">UDS</span></td>
+<td class="sb">SB</span></td>
+<td class="klp">KLP</span></td>
+<td class="uds">UDS</span></td>
 </tr>
 
 <tr class="odd">
 <th scope="row">Fri</th>
-<td><span class="sk">SK</span></td>
-<td><span class="cb">CB</span></td>
+<td class="sk">SK</span></td>
+<td class="cb">CB</span></td>
 <td></td>
 </tr>
 
