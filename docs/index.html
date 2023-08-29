@@ -42,7 +42,7 @@ th[scope="row"], td:not(:last-child) { border-right: var(--border-width) solid v
 input[type="checkbox"]:not(:checked), input[type="checkbox"]:not(:checked) + label { background-color: var(--slate); text-decoration: line-through; }
 </style>
 
-<script type="module" src="tt.js">
+<script type="module">
 try {
   var unchecked = new Set(JSON.parse(localStorage.getItem('unchecked')));
 } catch (e) {
