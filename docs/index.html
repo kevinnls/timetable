@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta charset="utf-8">
 <meta name="description" content="EFLU's MA French timetable for semester 3 in 2023—2024">
-<title>MA French Sem 3 Timetable</title>
-</head>
-<body>
 
-<script type="module" src="tt.js"></script>
-<link rel="stylesheet" href="static/pico.min.css">
+<title>MA French Sem 3 Timetable</title>
 
 <style>
 :root { --alpha: 50%; --lightness: 30%; --saturation: 90%; }
@@ -25,11 +22,24 @@ span { display: block; width: 3em; padding-right: .3em; padding-left: .3em; text
 label { width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
 form { display: grid; grid-template-columns: 1fr 9fr; align-content: center; justify-items: center; width: clamp(50%,600px,90%); margin: 3em auto;}
 </style>
+
+<script type="module" src="tt.js"></script>
+<link rel="stylesheet" href="static/pico.min.css">
+
+</head>
+
+<body>
+
+
+
 <header>
 <h1>MA French Sem 3 Timetable</h1>
 <p>2023&mdash;2024</p>
 </header>
+
+<figure>
 <table>
+
 <thead>
 <tr class="header">
 <th>Day</th>
@@ -38,6 +48,7 @@ form { display: grid; grid-template-columns: 1fr 9fr; align-content: center; jus
 <th>14:30—16:30</th>
 </tr>
 </thead>
+
 <tbody>
 <tr class="odd">
 <td>Mon</td>
@@ -45,12 +56,14 @@ form { display: grid; grid-template-columns: 1fr 9fr; align-content: center; jus
 <td><span class="cb">CB</span></td>
 <td><span class="library">Lib</span></td>
 </tr>
+
 <tr class="even">
 <td>Tue</td>
 <td><span class="sk">SK</span></td>
 <td><span class="klp">KLP</span></td>
 <td><span class="uds">UDS</span></td>
 </tr>
+
 <tr class="odd">
 <td>Wed</td>
 <td><span class="sb">SB</span></td>
@@ -63,14 +76,17 @@ form { display: grid; grid-template-columns: 1fr 9fr; align-content: center; jus
 <td><span class="klp">KLP</span></td>
 <td><span class="uds">UDS</span></td>
 </tr>
+
 <tr class="odd">
 <td>Fri</td>
 <td><span class="sk">SK</span></td>
 <td><span class="cb">CB</span></td>
 <td></td>
 </tr>
+
 </tbody>
 </table>
+</figure>
 
 <form name="selections">
 <input class="mc" name="mc" id="mc" type="checkbox" checked>
@@ -102,5 +118,6 @@ form { display: grid; grid-template-columns: 1fr 9fr; align-content: center; jus
   Library
 </label>
 </form>
+
 </body>
 </html>
