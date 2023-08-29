@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="description" content="EFLU's MA French timetable for semester 3 in 2023—2024">
+<title>MA French Sem 3 Timetable</title>
+</head>
+<body>
+
+<script type="module" src="tt.js"></script>
+<link rel="stylesheet" href="static/pico.min.css">
+
+<style>
+:root { --alpha: 50%; --lightness: 30%; --saturation: 90%; }
+table { margin: auto; width: max-content; }
+.mc { background-color: hsla(0,var(--saturation),var(--lightness),var(--alpha));}
+.cb { background-color: hsla(36,var(--saturation),var(--lightness),var(--alpha));}
+.sk { background-color: hsla(72,var(--saturation),var(--lightness),var(--alpha));}
+.klp { background-color: hsla(98,var(--saturation),var(--lightness),var(--alpha));}
+.uds { background-color: hsla(170,var(--saturation),var(--lightness),var(--alpha));}
+.sb { background-color: hsla(206,var(--saturation),var(--lightness),var(--alpha));}
+.library { background-color: hsla(254,var(--saturation),var(--lightness),var(--alpha));}
+span { display: block; width: 3em; padding-right: .3em; padding-left: .3em; text-align: center; margin: auto; }
+label { width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+form { display: grid; grid-template-columns: 1fr 9fr; align-content: center; justify-items: center; width: clamp(90%,600px,50%); margin: auto;}
+</style>
+<header>
+<h1>MA French Sem 3 Timetable</h1>
+<p>2023&mdash;2024</p>
+</header>
+<table>
+<thead>
+<tr class="header">
+<th>Day</th>
+<th>09:00—11:00</th>
+<th>11:10—13:10</th>
+<th>14:30—16:30</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mon</td>
+<td><span class="mc">MC</span></td>
+<td><span class="cb">CB</span></td>
+<td><span class="library">Lib</span></td>
+</tr>
+<tr class="even">
+<td>Tue</td>
+<td><span class="sk">SK</span></td>
+<td><span class="klp">KLP</span></td>
+<td><span class="uds">UDS</span></td>
+</tr>
+<tr class="odd">
+<td>Wed</td>
+<td><span class="sb">SB</span></td>
+<td><span class="mc">MC</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Thu</td>
+<td><span class="sb">SB</span></td>
+<td><span class="klp">KLP</span></td>
+<td><span class="uds">UDS</span></td>
+</tr>
+<tr class="odd">
+<td>Fri</td>
+<td><span class="sk">SK</span></td>
+<td><span class="cb">CB</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<form name="selections">
+<input class="mc" name="mc" id="mc" type="checkbox" checked>
+<label class="mc" for="mc">
+  MC / Francophone Literatures and National Identities
+</label>
+<input class="cb" name="cb" id="cb" type="checkbox" checked>
+<label class="cb" for="cb">
+  CB / Reading Narrative in French I
+</label>
+<input class="sk" name="sk" id="sk" type="checkbox" checked>
+<label class="sk" for="sk">
+  SK / Contemporary Writings in French
+</label>
+<input class="klp" name="klp" id="klp" type="checkbox" checked>
+<label class="klp" for="klp">
+  KLP / French Philosophy: An Introduction
+</label>
+<input class="uds" name="uds" id="uds" type="checkbox" checked>
+<label class="uds" for="uds">
+  UDS / Discourse Analysis and French Language Teaching and Learning
+</label>
+<input class="sb" name="sb" id="sb" type="checkbox" checked disabled>
+<label class="sb" for="sb">
+  SB / Research Methodology
+</label>
+<input class="library" name="library" id="library" type="checkbox" checked disabled>
+<label class="library" for="library">
+  Library
+</label>
+</form>
+</body>
+</html>
