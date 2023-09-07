@@ -37,6 +37,10 @@ input[type="checkbox"]:not(:checked), input[type="checkbox"]:not(:checked) + lab
 </style>
 
 <script type="module" src="tt.js"></script>
+<script type="module">
+	if ("serviceWorker" in navigator)
+		navigator.serviceWorker.register("service-worker.js")
+</script>
 
 </head>
 
