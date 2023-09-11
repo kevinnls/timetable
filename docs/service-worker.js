@@ -40,6 +40,10 @@ const cacheFirst = async ({ request, fallbackUrl }) => {
 };
 
 self.addEventListener("fetch", (event) => {
+  if(!event.request.url.matches('/timetable') {
+    debugger;
+    return event.respondWith(fetch(event.request))
+  }
   event.respondWith(
     cacheFirst({
       request: event.request,
