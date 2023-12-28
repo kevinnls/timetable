@@ -46,7 +46,6 @@ self.addEventListener("fetch", (event) => {
     '/service-worker.js',
   ]
   if(!event.request.url.match('https://kevinnlsamuel.com/timetable') || event.request.pathname in cacheExclude) {
-    debugger;
     return event.respondWith(fetch(event.request))
   }
   event.respondWith(
