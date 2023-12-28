@@ -40,7 +40,7 @@ input[type="checkbox"]:not(:checked), input[type="checkbox"]:not(:checked) + lab
 <script type="module" src="tt.js"></script>
 <script type="module">
 	if ("serviceWorker" in navigator)
-		navigator.serviceWorker.register("service-worker.js")
+	navigator.serviceWorker.register("service-worker.js", {scope: '/timetable'}).then(worker => worker.update());
 </script>
 
 </head>

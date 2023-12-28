@@ -45,7 +45,7 @@ self.addEventListener("fetch", (event) => {
   cacheExclude = [
     '/service-worker.js',
   ]
-  if(!event.request.url.match('https://kevinnlsamuel.com/timetable') || event.request.pathname in cacheExclude) {
+  if (event.request.pathname in cacheExclude) {
     return event.respondWith(fetch(event.request))
   }
   event.respondWith(
@@ -56,6 +56,4 @@ self.addEventListener("fetch", (event) => {
   );
 });
 
-self.addEventListener("activate", (event) => {
-	caches.keys().then(name => if(name !== currentCache) caches.delete(name));
-}
+caches.keys().then(name => { if (name !== currentCache) caches.delete(name) });
