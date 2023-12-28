@@ -1,9 +1,9 @@
 // service-worker.js
 
-caches.delete("v1");
+const currentCache = "sem4-v1.0.1";
 
 const putInCache = async (request, response) => {
-  const cache = await caches.open("sem4-v1.0.0");
+  const cache = await caches.open(currentCache);
   await cache.add(request, response);
 };
 
@@ -55,3 +55,7 @@ self.addEventListener("fetch", (event) => {
     }),
   );
 });
+
+self.addEventListener("activate", (event) => {
+	caches.keys().then(name => if(name !== currentCache) caches.delete(name));
+}
