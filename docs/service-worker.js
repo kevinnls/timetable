@@ -1,8 +1,10 @@
 // service-worker.js
 
+caches.delete("v1");
+
 const putInCache = async (request, response) => {
-  const cache = await caches.open("v1");
-  await cache.put(request, response);
+  const cache = await caches.open("sem4-v1.0.0");
+  await cache.add(request, response);
 };
 
 const cacheFirst = async ({ request, fallbackUrl }) => {
@@ -40,7 +42,10 @@ const cacheFirst = async ({ request, fallbackUrl }) => {
 };
 
 self.addEventListener("fetch", (event) => {
-  if(!event.request.url.match('kevinnlsamuel.com/timetable')) {
+  cacheExclude = [
+    '/service-worker.js',
+  ]
+  if(!event.request.url.match('https://kevinnlsamuel.com/timetable') || event.request.pathname in cacheExclude) {
     debugger;
     return event.respondWith(fetch(event.request))
   }
