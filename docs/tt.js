@@ -1,5 +1,5 @@
 try {
-  var unchecked = new Set(JSON.parse(localStorage.getItem('unchecked')));
+  var unchecked = new Set(JSON.parse(localStorage.getItem('unchecked-sem4')));
 } catch (e) {
   var unchecked = new Set()
 }
@@ -39,3 +39,5 @@ function toggleElements(id,visibility) {
     element.style = `visibility:  ${visibility};`
   )
 }
+
+localStorage.removeItem('unchecked');
