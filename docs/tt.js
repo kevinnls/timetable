@@ -22,7 +22,7 @@ function changeHandler(e) {
 async function updateLocalStorage(id) {
   if (unchecked.has(id)) unchecked.delete(id)
   else unchecked.add(id)
-  localStorage.setItem('unchecked', JSON.stringify(Array.from(unchecked)));
+  localStorage.setItem('unchecked-sem4', JSON.stringify(Array.from(unchecked)));
 }
 
 function updateUnchecked(){
