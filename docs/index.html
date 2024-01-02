@@ -11,30 +11,31 @@
 <link rel="stylesheet" href="static/pico.min.css">
 
 <style>
-:root { --grid-spacing-horizontal: .7ch; --grid-spacing-vertical: .7ch; }
-input[type="checkbox"]:checked { border-color: transparent; }
-label { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 100%; border-radius: 4px; padding: .5ch; }
-figure { width: clamp(60%,600px,95%); margin: auto; }
-form.grid { grid-template-columns: 1fr 9fr; align-items: center; justify-items: center; width: clamp(50%,600px,90%); margin: auto; }
-th, td { text-align: center; }
-td { font-weight: bold; }
-th[scope="row"], td:not(:last-child) { border-right: var(--border-width) solid var(--table-border-color); }
+:root {--grid-spacing-horizontal: .7ch; --grid-spacing-vertical: .7ch;}
+input[type="checkbox"]:checked {border-color: transparent;}
+label {text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 100%; border-radius: 4px; padding: .5ch;}
+figure {width: clamp(60%,600px,95%); margin: auto;}
+form.grid {grid-template-columns: 1fr 9fr; align-items: center; justify-items: center; width: clamp(50%,600px,90%); margin: auto;}
+th, td {text-align: center;}
+td {font-weight: bold;}
+th[scope="row"], td:not(:last-child) {border-right: var(--border-width) solid var(--table-border-color);}
 </style>
 
 <style>
-:root { --alpha: 50%; --lightness: 50%; --saturation: 100%; --slate: hsla(0,0%,75%,30%)}
+:root {--alpha: 50%; --lightness: 50%; --saturation: 100%; --slate: hsla(0,0%,75%,30%)}
+.library {background-color: hsla(0,0%,80%,var(--alpha));}
 @media(prefers-color-scheme: dark) {
-:root { --alpha: 50%; --lightness: 70%; --saturation: 90%; --slate: hsla(0,0%,40%,80%)}
+:root {--alpha: 50%; --lightness: 70%; --saturation: 90%; --slate: hsla(0,0%,40%,80%)}
+.library {background-color: hsla(0,0%,30%,var(--alpha));}
 }
-.mc { background-color: hsla(0,var(--saturation),var(--lightness),var(--alpha));}
-.cb { background-color: hsla(36,var(--saturation),var(--lightness),var(--alpha));}
-.sk { background-color: hsla(65,var(--saturation),var(--lightness),var(--alpha));}
-.klp { background-color: hsla(109,var(--saturation),var(--lightness),var(--alpha));}
-.uds { background-color: hsla(152,var(--saturation),var(--lightness),var(--alpha));}
-.dissertation { background-color: hsla(182,var(--saturation),var(--lightness),var(--alpha));}
+.mc {background-color: hsla(0,var(--saturation),var(--lightness),var(--alpha));}
+.cb {background-color: hsla(36,var(--saturation),var(--lightness),var(--alpha));}
+.sk {background-color: hsla(65,var(--saturation),var(--lightness),var(--alpha));}
+.klp {background-color: hsla(109,var(--saturation),var(--lightness),var(--alpha));}
+.uds {background-color: hsla(152,var(--saturation),var(--lightness),var(--alpha));}
+.dissertation {background-color: hsla(182,var(--saturation),var(--lightness),var(--alpha));}
 td.dissertation {font-size: .5em;}
-.library { background-color: hsla(219,var(--saturation),var(--lightness),var(--alpha));}
-input[type="checkbox"]:not(:checked), input[type="checkbox"]:not(:checked) + label { background-color: var(--slate); text-decoration: line-through; }
+input[type="checkbox"]:not(:checked), input[type="checkbox"]:not(:checked) + label {background-color: var(--slate); text-decoration: line-through;}
 </style>
 
 <script type="module" src="tt.js"></script>
@@ -126,7 +127,7 @@ input[type="checkbox"]:not(:checked), input[type="checkbox"]:not(:checked) + lab
 </label>
 <input class="dissertation" name="dissertation" id="dissertation" type="checkbox" checked disabled>
 <label class="dissertation" for="dissertation">
-  Dissertation // DON'T FORGET ME PWEASE 🥺
+  Dissertation // pwease don't forget me 🥺
 </label>
 <input class="library" name="library" id="library" type="checkbox" checked disabled>
 <label class="library" for="library">
