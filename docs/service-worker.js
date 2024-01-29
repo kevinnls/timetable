@@ -1,6 +1,6 @@
 // service-worker.js
 
-const currentCache = "sem4-v1.0.4";
+const currentCache = "sem4-v1.1.0";
 
 const putInCache = async (request, response) => {
   const cache = await caches.open(currentCache);
