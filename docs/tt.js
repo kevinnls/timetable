@@ -35,7 +35,7 @@ function updateUnchecked(){
 }
 
 function toggleElements(id,visibility) {
-  document.querySelectorAll(`td.${id}`).forEach(element =>
+  document.querySelectorAll(`table .${id}`).forEach(element =>
     element.style = `visibility:  ${visibility};`
   )
 }

@@ -17,8 +17,8 @@ label {text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 10
 figure {width: clamp(60%,600px,95%); margin: auto;}
 form.grid {grid-template-columns: 1fr 9fr; align-items: center; justify-items: center; width: clamp(50%,600px,90%); margin: auto;}
 th, td {text-align: center;}
-td {font-weight: bold;}
-td.split {display:grid; padding:0px;}
+td {font-weight: bold;padding:0px;}
+td > div {display:inline-grid;width:100%;height:100%;grid-auto-flow:row;}
 th[scope="row"], td:not(:last-child) {border-right: var(--border-width) solid var(--table-border-color);}
 </style>
 
@@ -68,40 +68,42 @@ input[type="checkbox"]:not(:checked), input[type="checkbox"]:not(:checked) + lab
 <tbody>
 <tr class="odd">
 <th scope="row">Mon</th>
-<td class="cb">CB</td>
-<td class="sk">SK</td>
-<td class="uds">UDS</td>
+<td><div class="cb">CB</div></td>
+<td><div class="sk">SK</div></td>
+<td><div class="uds">UDS</div></td>
 </tr>
 
 <tr class="even">
 <th scope="row">Tue</th>
 <td></td>
-<td class="klp">KLP</td>
+<td><div class="klp">KLP</div></td>
 <td class="split">
+							<div>
 <div class="mc">MC</div>
 <div class="library">Library</div>
+							</div>
 </td>
 </tr>
 
 <tr class="odd">
 <th scope="row">Wed</th>
-<td class="cb">CB</td>
+<td><div class="cb">CB</div></td>
 <td></td>
-<td class="dissertation">Dissertation</td>
+<td><div class="dissertation">Dissertation</div></td>
 </tr>
 
 <tr class="even">
 <th scope="row">Thu</th>
-<td class="mc">MC</td>
-<td class="klp">KLP</td>
-<td class="uds">UDS</td>
+<td><div class="mc">MC</div></td>
+<td><div class="klp">KLP</div></td>
+<td><div class="uds">UDS</div></td>
 </tr>
 
 <tr class="odd">
 <th scope="row">Fri</th>
 <td></td>
-<td class="sk">SK</td>
-<td class="dissertation">Dissertation</td>
+<td><div class="sk">SK</div></td>
+<td><div class="dissertation">Dissertation</div></td>
 </tr>
 
 </tbody>
